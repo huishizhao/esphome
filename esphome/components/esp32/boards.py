@@ -1342,6 +1342,10 @@ BOARDS = {
         "name": "Espressif ESP32-S3-Box",
         "variant": VARIANT_ESP32S3,
     },
+    "esp32korvo1": {
+        "name": "Espressif ESP32-korvo-v1",
+        "variant": VARIANT_ESP32,
+    },
     "esp32s3camlcd": {
         "name": "ESP32S3 CAM LCD",
         "variant": VARIANT_ESP32S3,
