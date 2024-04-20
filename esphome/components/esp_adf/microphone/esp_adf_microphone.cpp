@@ -15,6 +15,7 @@
 #include <i2s_stream.h>
 #include <raw_stream.h>
 #include <recorder_sr.h>
+#include <audio_pipeline.h>
 
 #include <board.h>
 
