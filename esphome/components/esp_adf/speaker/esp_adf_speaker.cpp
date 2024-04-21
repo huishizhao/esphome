@@ -84,7 +84,8 @@ void ESPADFSpeaker::player_task(void *params) {
   i2s_stream_cfg_t i2s_cfg = {
       .type = AUDIO_STREAM_WRITER,
       .i2s_config = i2s_config,
-      .i2s_port = I2S_NUM_0,
+      .i2s_port = 0
+  //      .i2s_port = I2S_NUM_0, //
       .use_alc = false,
       .volume = 0,
       .out_rb_size = I2S_STREAM_RINGBUFFER_SIZE,
