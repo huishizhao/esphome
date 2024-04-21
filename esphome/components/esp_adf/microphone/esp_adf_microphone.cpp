@@ -111,22 +111,7 @@ void ESPADFMicrophone::read_task(void *params) {
 
   i2s_stream_cfg_t i2s_cfg = {
       .type = AUDIO_STREAM_READER,
-      //.i2s_config = i2s_config,
-      .i2s_config = {
-      .mode = (i2s_mode_t) (I2S_MODE_MASTER | I2S_MODE_RX),
-      .sample_rate = 16000,
-      .bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT,
-      .channel_format = I2S_CHANNEL_FMT_RIGHT_LEFT,
-      .communication_format = I2S_COMM_FORMAT_STAND_I2S,
-      .intr_alloc_flags = ESP_INTR_FLAG_LEVEL2 | ESP_INTR_FLAG_IRAM,
-      .dma_buf_count = 8,
-      .dma_buf_len = 128,
-      .use_apll = false,
-      .tx_desc_auto_clear = true,
-      .fixed_mclk = 0,
-      .mclk_multiple = I2S_MCLK_MULTIPLE_256,
-      .bits_per_chan = I2S_BITS_PER_CHAN_DEFAULT,
-       },
+      .i2s_config = i2s_config,
       .i2s_port = 1,      //.i2s_port = static_cast<i2s_port_t>(CODEC_ADC_I2S_PORT),//
       .use_alc = false,
       .volume = 0,
