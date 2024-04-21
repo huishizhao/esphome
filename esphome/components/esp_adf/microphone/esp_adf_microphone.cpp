@@ -111,7 +111,7 @@ void ESPADFMicrophone::read_task(void *params) {
 
   i2s_stream_cfg_t i2s_cfg = {
       .type = AUDIO_STREAM_READER,
-      .i2s_config = i2s_config,
+      //.i2s_config = i2s_config,
       .i2s_config = {
       .mode = (i2s_mode_t) (I2S_MODE_MASTER | I2S_MODE_RX),
       .sample_rate = 16000,
