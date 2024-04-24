@@ -124,6 +124,7 @@ void ESPADFMicrophone::read_task(void *params) {
       .multi_out_num = 0,
       .uninstall_drv = true,
       .need_expand = false,
+      .buffer_len = I2S_STREAM_BUF_SIZE,  
   };
   audio_element_handle_t i2s_stream_reader = i2s_stream_init(&i2s_cfg);
 
