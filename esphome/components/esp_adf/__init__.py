@@ -73,7 +73,7 @@ async def to_code(config):
         name="esp-adf",
         repo="https://github.com/huishizhao/esp-adf",
         path="components",
-        ref="v2.6",
+        ref="v2.5",
         components=["*"],
         submodules=["components/esp-sr", "components/esp-adf-libs"],
     )
