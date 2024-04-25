@@ -73,7 +73,7 @@ async def to_code(config):
         name="esp-adf",
         repo="https://github.com/huishizhao/esp-adf",
         path="components",
-        ref="v2.5",
+        ref="v2.6",
         components=["*"],
         submodules=["components/esp-sr", "components/esp-adf-libs"],
     )
@@ -100,5 +100,5 @@ async def to_code(config):
         )
         esp32.add_extra_build_file(
             "esp_adf_patches/idf_v4.4_freertos.patch",
-            "https://github.com/huishizhao/esp-adf/raw/v2.5/idf_patches/idf_v5.2_freertos.patch",
+            "https://github.com/huishizhao/esp-adf/raw/v2.6/idf_patches/idf_v5.2_freertos.patch",
         )
