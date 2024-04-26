@@ -91,7 +91,7 @@ async def to_code(config):
     if board := config.get(CONF_BOARD):
         cg.add_define("USE_ESP_ADF_BOARD")
 
-//       esp32.add_idf_sdkconfig_option(SUPPORTED_BOARDS[board], True)
+       esp32.add_idf_sdkconfig_option(SUPPORTED_BOARDS[board], True)
 
         esp32.add_extra_script(
             "pre",
