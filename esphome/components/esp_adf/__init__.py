@@ -23,7 +23,7 @@ SUPPORTED_BOARDS = {
     "esp32s3boxlite": "CONFIG_ESP32_S3_BOX_LITE_BOARD",
     "esp32s3box3": "CONFIG_ESP32_S3_BOX_3_BOARD",
     "esp32s3korvo1": "CONFIG_ESP32_S3_KORVO1_BOARD",
-    "esp32korvo1": "CONFIG_ESP32_KORVO_V1_BOARD",
+    "esp32korvo1": "CONFIG_ESP32_KORVO_V1_1_BOARD",
 }
 
 
