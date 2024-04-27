@@ -92,7 +92,12 @@ async def to_code(config):
         cg.add_define("USE_ESP_ADF_BOARD")
 
         esp32.add_idf_sdkconfig_option(SUPPORTED_BOARDS[board], True)
-
+    
+        esp32.add_extra_script(
+            "pre",
+            "apply_adf_patches.py",
+            os.path.join(os.path.dirname(__file__), "apply_adf_patches.py.script"),
+        )
         esp32.add_extra_build_file(
             "esp_adf_patches/idf_v4.4_freertos.patch",
             "https://github.com/huishizhao/esp-adf/raw/v2.6/idf_patches/idf_v5.2_freertos.patch",
